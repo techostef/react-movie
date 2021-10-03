@@ -1,0 +1,7 @@
+/node_modules
+.eslintcache
+*.scss
+*.img
+*.svg
+*.css
+*.json

@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.detail-movie {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  background-color: #e2e2e2;
+  .content-movie {
+    width: 900px;
+    display: flex;
+    .ant-image {
+      height: fit-content;
+    }
+    .info-movie {
+      width: calc(100% - 300px);
+      margin-left: 20px;
+      height: 450px;
+      .year {
+        color: #b9b9b9;
+        font-size: 22px;
+        margin-left: 5px;
+      }
+      .content-info-genre {
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+        .genre-text {
+          color: $colorLink;
+        }
+      }
+
+      .content-info-rating {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .content-info-movie {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid $borderColor;
+
+        &.grid {
+          display: grid;
+          grid-template-columns: 100px auto;
+        }
+      }
+    }
+  }
+}
